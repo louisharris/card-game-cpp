@@ -6,6 +6,7 @@
 #include <math.h>
 
 #include "card.cpp";
+#include "board.cpp";
 
 using namespace std;
 
@@ -13,8 +14,15 @@ using namespace std;
 int main() 
 {
     cout << "Hello, World!" << endl;
-    Card card = Card(5,6);
+    Board board = Board();
 
-    cout << to_string(card.GetAttack()) << endl;
+
+    // cout << to_string(card.GetAttack()) << endl;
     return 0;
+}
+
+void RunGame() {
+    while (true) {
+        
+    }
 }

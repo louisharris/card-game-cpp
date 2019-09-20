@@ -1,0 +1,39 @@
+{
+    "cards": [
+        {
+            "name": "average joe",
+            "attack": 5,
+            "defence": 2,
+            "health": 10,
+            "alive": true
+        },
+        {
+            "name": "sheilded joe",
+            "attack": 2,
+            "defence": 4,
+            "health": 10,
+            "alive": true
+        },
+        {
+            "name": "berseker joe",
+            "attack": 8,
+            "defence": 1,
+            "health": 10,
+            "alive": true
+        },
+        {
+            "name": "sumo joe",
+            "attack": 1,
+            "defence": 0,
+            "health": 20,
+            "alive": true
+        },
+        {
+            "name": "cautious joe",
+            "attack": 3,
+            "defence": 5,
+            "health": 5,
+            "alive": true
+        }
+    ]
+}

@@ -47,8 +47,11 @@ class Player {
         void Damage(int dmg) {
             this->health_ -= dmg;
 
+            cout << "player" + this->name_ + "took " + to_string(dmg) + " damage!" << endl;
             if (this->health_ < 0) {
                 this->alive_ = false;
+                cout << "player" + this->name_ + "has been defeated!" << endl;
+
             }
         }
 };

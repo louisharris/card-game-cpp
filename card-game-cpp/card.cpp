@@ -16,7 +16,8 @@ class Card {
 
     public:
         Card();
-        Card(int attack, int defence) {
+        Card(string name, int attack, int defence) {
+            this->name_ = name;
             this->attack_ = attack;
             this->defence_ = defence;
             this->health_ = defence;
@@ -43,8 +44,14 @@ class Card {
         void SetHealth(int health) {
             this->health_ = health;
         }
-        void Damage(int attack) {
-            this->health_ -= attack;
+        void Damage(int dmg) {
+            if (dmg > this->defence_) {
+                int damageTaken = dmg-this->defence_;
+                this->health_ -= damageTaken;
+                cout << this->name_ + "was damaged for " + to_string(damageTaken) + "!" << endl;
+            } else {
+                cout << this->name_ + "was not affected!" << endl;
+            }
 
             if (this->health_ < 0) {
                 this->alive_ = false;
