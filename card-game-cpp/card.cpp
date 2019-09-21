@@ -44,7 +44,7 @@ class Card {
         void SetHealth(int health) {
             this->health_ = health;
         }
-        void Damage(int dmg) {
+        void ReceiveDamage(int dmg) {
             if (dmg > this->defence_) {
                 int damageTaken = dmg-this->defence_;
                 this->health_ -= damageTaken;
@@ -56,5 +56,10 @@ class Card {
             if (this->health_ < 0) {
                 this->alive_ = false;
             }
+        }
+        void DealDamage(Card card) {
+            cout << this->name_ + "attacked " + to_string(card.GetName) + "!" << endl;
+            card.ReceiveDamage(this->attack_);
+            ReceiveDamage(card.GetAttack);
         }
 };

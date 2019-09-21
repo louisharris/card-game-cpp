@@ -44,6 +44,8 @@ class Player {
         void SetName(string name) {
             this->name_ = name;
         }
+
+        
         void Damage(int dmg) {
             this->health_ -= dmg;
 
